@@ -1,0 +1,31 @@
+.title {
+    height: 60px;
+}
+
+.title > h2 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 60px;
+/* identical to box height, or 136% */
+    text-align: center;
+    font-feature-settings: 'liga' off;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+/* media queires for different screens  */
+
+@media screen and (max-width: 390px) and ( max-height: 844px) {
+    .title > h2 {
+        position: absolute;
+        margin: 46px 54px 0 54px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        text-align: center;
+    }
+}
