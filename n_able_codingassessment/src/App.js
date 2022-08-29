@@ -1,22 +1,30 @@
 import React, { Fragment, useState } from 'react';
 
 import Table from './components/Table';
+import Title from './components/Title';
 
 import './App.css';
 
 function App() {
 
+// Setup State to toggle the page and table indexs.
+// The state is set at a default to preview the content shown on the Figma presentation
+
   const [toggleState, setToggleState] = useState(3);
   const [togglePage, setTogglePage] = useState(1);
 
+// Function to toggle the state for the preview page dependent on main button toggle
   const togglePages = (index) => {
     setTogglePage(index)
   }
 
+// Function to toggle the state for the table indexes dependent on tab selection
   const toggleTab = (index) => {
       setToggleState(index);
   }
 
+// Input data for page 1 preview. 
+// This is done simply to show the reusbalilty of the components
 const inputContent1 = () => {
   return ( 
     <Fragment>
@@ -88,6 +96,7 @@ const inputContent1 = () => {
   );
 }
 
+// Input data for page 2 preview. 
 const inputContent2 = () => {
   return ( 
     <Fragment>
@@ -163,20 +172,30 @@ const inputContent2 = () => {
   );
 }
 
-
+// Main div renders two buttons that then toggle state to show preview pages.
+// Added simple Title component for simplicity
   return (
     <div className="App">
       <div className="main">
         {
         togglePage ===1 ? (
-          <div className="page_buttons">
-            <button className="page_button" onClick={() => togglePages(2)}>
-              Page 1
-            </button>
-            <button className="page_button" onClick={() => togglePages(3)}>
-              Page 2
-            </button>
-          </div>
+            <Fragment>
+                <Title title="Please choose a page to preview" />
+                <div className="page_buttons">
+                    <button className="page_button" onClick={() => {
+                    togglePages(2)
+                    toggleTab(3)
+                    }}>
+                    Page 1
+                    </button>
+                    <button className="page_button" onClick={() => {
+                    togglePages(3)
+                    toggleTab(2)
+                    }}>
+                    Page 2
+                    </button>
+                </div>
+          </Fragment>
         ) : togglePage === 2  ? (
           <Fragment>
             <button className="back" onClick={() => togglePages(1)}>Back</button>

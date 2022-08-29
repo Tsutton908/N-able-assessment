@@ -6,22 +6,18 @@
   left: 0;
   top: 0;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 .main {
-  /*
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  margin-top: 75px;
-  */
   position: relative;
   height: 60px;
-  /* left: 144px; */
   margin: 75px 144px 0 144px;
   justify-content: center;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .page_buttons {
@@ -76,5 +72,26 @@
     background: none;
     border: none;
     font-size: 15px;
+  }
+
+  .page_buttons {
+    margin-left: -125px;
+  }
+
+  .page_button {
+    margin: 20px 50px;
+    background: #6B0BEA;
+    width: 150px;
+    height: 50px;
+    border-radius: 3px;
+    border: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 15px;
+    color: white;
   }
 }
