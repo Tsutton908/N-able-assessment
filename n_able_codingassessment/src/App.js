@@ -132,7 +132,7 @@ const inputContent2 = () => {
       </div>
       <div className="right">
           <div className={toggleState === 1 ? "content active-content" : "content"}>
-              Test 1
+          Difficult configurations and complicated automations can have a serious impact on your business. N-able N-central is designed to help you avoid downtime and outages.
           </div>
           <div className={toggleState === 2 ? "content active-content" : "content"}>
             <div className="content_container">
@@ -142,29 +142,13 @@ const inputContent2 = () => {
             </div>
           </div>
           <div className={toggleState === 3 ? "content active-content" : "content"}>
-              <ul>
-                  <li>
-                      <p>Manage servers, workstations, network, mobile, Windows, Mac, and Linux</p>
-                  </li>
-                  <li>
-                      <p>Integrations with Meraki and Intune</p>
-                  </li>
-                  <li>
-                      <p>Fast, responsive front and back end remote access</p>
-                  </li>
-                  <li>
-                      <p>Automatic network discovery</p>
-                  </li>
-                  <li>
-                      <p>Network topology mapping</p>
-                  </li>
-              </ul>
+          If your outage response time and other support isn't an asset, it's a liability. With N-central, you will always enjoy reliable, world-class 24/7 support
           </div>
           <div className={toggleState === 4 ? "content active-content" : "content"}>
-              Test 4
+          Time is money - your RMM shouldn't waste either. N-able's N-hanced services migrate you quickly, accelerate your automation, and free your techs fro more profitable tasks.
           </div>
           <div className={toggleState === 5 ? "content active-content" : "content"}>
-              Test 5
+          If you ever think you might need a better RMM partner, you do - one that is more focused on your needs than their next business move or acquisition.
           </div>
       </div>
   </div>
